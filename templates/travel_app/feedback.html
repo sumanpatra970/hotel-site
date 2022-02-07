@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% extends 'travel_app/header.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/basic.css' %}">
+</head>
+<body>
+{% block content %}
+<div class="container">
+    <form class="form-group" action="completeform">
+        <div class="container-fluid">
+            <label for id="id1">How was your experience</label>
+            <input type="text" id="id1" class="form-control">
+        </div>
+        <div class="container-fluid">
+             <label for id="id1">What is your suggestions</label>
+            <input type="text" id="id1" class="form-control">
+        </div>
+        <div class="container-fluid">
+            <label for id="id1">Do you face any problem in website</label>
+            <input type="text" id="id1" class="form-control">
+        </div>
+        <div class="container-fluid">
+            <label for id="id1">How you do you know about us</label>
+            <input type="text" id="id1" class="form-control">
+        </div>
+        <div class="container-fluid">
+            <label for id="id1">Will you refer to another person</label>
+            <input type="text" id="id1" class="form-control">
+        </div><br>
+        <div class="container-fluid">
+            <input type="submit">
+        </div>
+    </form>
+</div>
+{% endblock %}
+</body>
+</html>

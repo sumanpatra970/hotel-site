@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% extends 'travel_app/header.html' %}
+{%  load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/basic.css' %}">
+</head>
+<body>
+{% block content %}
+<div class="container">
+    <h1 class="kox">LOGIN HERE</h1>
+    <form class="form-group" action="login_next" method="post">
+    {%  csrf_token %}
+        <div>
+            <label for="id1">Username</label>
+            <input class="form-control" type="text" id="id1" name="username" placeholder="enter your username">
+        </div>
+        <div>
+            <label for="id1">Password</label>
+            <input  class="form-control" type="password" id="id1" name="password" placeholder="enter your password">
+        </div>
+        <input type="submit">
+    </form>
+</div>
+{% endblock %}
+</body>
+</html>

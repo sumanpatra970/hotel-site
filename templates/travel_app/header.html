@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/basic.css' %}">
+    <link rel="icon" href="{% static 'images/sea.jpg' %}">
+</head>
+<body id="bb">
+<div class="container-fluid">
+    <div class="jumbotron box">
+        <h1>WELCOME TO OUR WEBSITE</h1>
+        <p>The best and most beautiful things in the world cannot be seen or even touched - they must be felt with the heart--Helen Keller.</p>
+    </div>
+</div>
+{% block content %}
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% extends 'travel_app/header.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/basic.css' %}">
+    <link rel="icon" href="{% static 'images/sea.jpg' %}">
+</head>
+<body>
+{% block content %}
+    <div class="container" align="center">
+        <p class="hox">PLEASE ENTER CORRECT INFORMATION</p>
+        <a href="http://127.0.0.1:8000" class="hox">click here to go home page</a><br>
+    </div>
+{% endblock %}
+</body>
+</html>

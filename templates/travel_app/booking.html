@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% extends 'travel_app/header.html' %}
+{%  load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Booking</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/basic.css' %}">
+</head>
+<body>
+{% block content %}
+    <div class="container-fluid gox">
+    <p class="hox">Your boking is completed</p>
+    <p class="hox">Make your payment here</p>
+    </div>
+    <div class="container" align="center">
+        <h1 class="kox">BILLING INFORMATION</h1>
+        <p class="kox">YOUR NAME:{{ details.username.title }}</p>
+        <p class="kox">YOUR PHONE NO:{{ details.phoneno }}</p>
+        <p class="kox">DATE OF ISSUE:{{ details.date }}</p>
+        <p class="kox">NO OF ROOMS:{{ details.value }}</p>
+        <p class="kox">TOTAL AMOUNT TO BE PAID:{{ details.price }}</p>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-1"></div>
+            <div class="col-sm-1"></div>
+            <div class="col-sm-1"></div>
+            <div class="col-sm-1 lox"><a href="https://paytm.com"><button type="submit" class="btn-success">PAYTM</button></a></div>
+            <div class="col-sm-2 lox"><a href="https://amazon.com"><button type="submit" class="btn-info">AMAZONPAY</button></a></div>
+            <div class="col-sm-1 lox"><a href="https://googlepay.com"><button type="submit" class="btn-primary">GOOGLEPAY</button></a></div>
+        </div>
+    </div><br>
+    <div class="lox"><p class="kox"><a href="http://127.0.0.1:8000">click here to go for home page</a></p></div>
+    <br><br>
+{% endblock %}
+</body>
+</html>

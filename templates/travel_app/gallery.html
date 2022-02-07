@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% extends 'travel_app/header.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/basic.css' %}">
+</head>
+<body>
+{% block content %}
+<div class="container">
+    <h1 align="center" class="gox">HAVE A LOOK</h1>
+</div><br>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-3"><img class="dox" src="{% static 'images/bed.jpg' %}"></div>
+        <div class="col-sm-3"><img class="dox" src="{% static 'images/tea_table.jpg' %}"></div>
+        <div class="col-sm-3"><img class="dox" src="{% static 'images/tea_table2.jpg' %}"></div>
+        <div class="col-sm-3"><img class="dox" src="{% static 'images/tv_view.jpg' %}"></div>
+        <div class="col-sm-3"><img class="dox" src="{% static 'images/drawingroom.jpg' %}"></div>
+        <div class="col-sm-3"><img class="dox" src="{% static 'images/bath_basin.jpg' %}"></div>
+        <div class="col-sm-3"><img class="dox" src="{% static 'images/garden.jpg' %}"></div>
+        <div class="col-sm-3"><img class="dox" src="{% static 'images/Bedroom.jpg' %}"></div>
+        <div class="col-sm-3"><img class="dox" src="{% static 'images/window.jpg' %}"></div>
+        <div class="col-sm-3"><img class="dox" src="{% static 'images/sofa.jpg' %}"></div>
+        <div class="col-sm-3"><img class="dox" src="{% static 'images/sofa2.jpg' %}"></div>
+        <div class="col-sm-3"><img class="dox" src="{% static 'images/cool.jpg' %}"></div>
+    </div>
+</div>
+{% endblock %}
+</body>
+</html>

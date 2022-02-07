@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{% extends 'travel_app/header.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SIGNUP</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/basic.css' %}">
+</head>
+<body>
+{% block content %}
+<div class="container">
+    <h1 class="kox">REGISTER HERE</h1>
+    <form class="form-group" method="post" action="signup_next">
+    {%  csrf_token %}
+        <div>
+            <label for="id2">FIRSTNAME</label>
+            <input class="form-control" type="text" id="id2" name="firstname" placeholder="enter your first name">
+        </div>
+        <div>
+            <label for="id2">LASTNAME</label>
+            <input class="form-control" type="text" id="id2" name="lastname" placeholder="enter your last name">
+        </div>
+        <div>
+            <label for="id2">EMAIL</label>
+            <input class="form-control" type="email" id="id2" name="email" placeholder="enter your email">
+        </div>
+        <div>
+            <label for="id2">ENTER PASSWORD</label>
+            <input class="form-control" type="password" id="id2" name="password" placeholder="enter your password">
+        </div>
+        <div>
+            <label for="id2">RE ENTER PASSWORD</label>
+            <input class="form-control" type="password" id="id2" name="repassword" placeholder="enter your password again">
+        </div>
+        <div>
+            <label for="id2">PHONENO</label>
+            <input class="form-control" type="text" id="id2" name="Phoneno" placeholder="enter your phone no">
+        </div>
+        <div><br>
+            <input type="submit">
+        </div>
+    </form>
+</div>
+{% endblock %}
+</body>
+</html>

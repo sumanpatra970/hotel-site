@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+{% extends 'travel_app/header.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/basic.css' %}">
+    <link rel="icon" href="{% static 'images/sea.jpg' %}">
+</head>
+<body id="bb">
+{% block content %}
+<div class="container lox">
+    <p class="hox"><a href="vechicle/placeorder"><button type="submit" class="btn-info">CLICK HERE TO GO TAVEL PAGE</button></a></p>
+</div>
+<div class="container-fluid">
+    <div class="row box">
+        <div class="col-sm-2 cox"><a href="login">LOGIN</a></div>
+        <div class="col-sm-2 cox"><a href="signup">SIGNUP</a></div>
+        <div class="col-sm-2 cox"><a href="bookingform">BOOKING</a></div>
+        <div class="col-sm-2 cox"><a href="working">ACCOUNT</a></div>
+        <div class="col-sm-2 cox"><a href="gallery">GALLERY</a></div>
+        <div class="col-sm-2 cox"><a href="About">ABOUT</a></div>
+    </div>
+</div><br><br>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-3"><a href="offer1"><img height="100%" width="100%" src="{% static 'images/offer1.png' %}"></a></div>
+        <div class="col-sm-3"><a href="offer2"><img height="100%" width="100%" src="{% static 'images/offer2.png' %}"></a></div>
+        <div class="col-sm-3"><a href="offer2"><img height="100%" width="100%" src="{% static 'images/offer3.png' %}"></a></div>
+        <div class="col-sm-3"><a href="offer1"><img height="100%" width="100%" src="{% static 'images/offer4.png' %}"></a></div>
+    </div>
+</div><br>
+<div class="container-fluid">
+    <p class="fox">WE ARE HAPPY TO SERVER YOU </p>
+    <p class="fox">FILL THE FORM TO START BOOKING</p>
+</div><br>
+<div class="container-fluid">
+    <form class="form-group" method="post" action="booking">
+        {% csrf_token %}
+        <div>
+            <label for="id1">Username</label>
+            <input class="form-control" type="text" id="id1" placeholder="Enter your User Name" name="user" required>
+        </div>
+        <div>
+            <label for="id1">Password</label>
+            <input class="form-control" type="password" id="id1" placeholder="Enter your Password" name="password" required>
+        </div>
+        <div>
+            <label for="id2">Phoneno</label>
+            <input class="form-control" type="text" id="id2" placeholder="Enter your phone no" name="phoneno" required>
+        </div>
+        <div>
+            <label for="id3">Select city</label>
+            <select class="custom-select form-control" id="id3">
+                <option value="0">Select city:</option>
+                <option value="1">BHUBANESWAR</option>
+                <option value="2">HYDERBAD</option>
+                <option value="3">BANGALORE</option>
+                <option value="4">CHENNAI</option>
+                <option value="5">MUMBAI</option>
+                <option value="6">DELHI</option>
+            </select>
+        </div>
+        <div>
+            <label for="id4">No of room</label>
+            <input class="form-control" type="number" id="id4" placeholder="no of rooms" name="roomvalue" required>
+        </div>
+        <div>
+            <label for="id4">Date of issue</label>
+            <input class="form-control" type="datetime-local" id="id4" placeholder="date" name="date_issue" required>
+        </div>
+        <div>
+            <label for="id4">COUPON CODE</label>
+            <input class="form-control" type="text" id="id4" name="coupon" placeholder="Enter coupon code" required>
+        </div>
+        <div>
+            <input type="submit">
+        </div>
+    </form>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-3"><p class="hox">Bhubaneswar</p><img class="dox" src="{% static 'images/bhubaneswar.jpg' %}"></div>
+        <div class="col-sm-3"><p class="hox">Hyderbad</p><img class="dox" src="{% static 'images/hyderbad.jpg' %}"></div>
+        <div class="col-sm-3"><p class="hox">Mumbai</p><img class="dox" src="{% static 'images/mumbai.jpg' %}"></div>
+        <div class="col-sm-3"><p class="hox">Chennai</p><img class="dox" src="{% static 'images/puri.jpg' %}"></div>
+    </div>
+</div>
+<div class="container-fluid">
+    <P class="gox hox"><strong>FOLLOW US ON FACEBOOK,TWITTER,INSTAGRAM AND YOUTUBE</strong></P>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-2 lox"><a href="https://fb.com"><button type="submit" class="btn-primary">FACEBOOK</button></a></div>
+        <div class="col-sm-2 lox"><a href="https://twitter.com"><button type="submit" class="btn-success">TWITTER</button></a></div>
+        <div class="col-sm-2 lox"><a href="https://instagram.com"><button type="submit" class="btn-danger">INSTAGRAM</button></a></div>
+        <div class="col-sm-2 lox"><a href="https://gmail.com"><button type="submit" class="btn-light">EMAIL</button></a></div>
+        <div class="col-sm-2 lox"><a href="feedback"><button type="submit" class="btn-info">FEEDBACK</button></a></div>
+        <div class="col-sm-2 lox"><a href="https://youtube.com"><button type="submit" class="btn-dark">YOUTUBE</button></a></div>
+    </div>
+</div>
+<script src="{% static "javascript/only.js" %}"></script>
+<br><br>
+{% endblock %}
+</body>
+</html>

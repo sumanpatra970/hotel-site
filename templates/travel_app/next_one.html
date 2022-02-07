@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% extends 'travel_app/header.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/basic.css' %}">
+</head>
+<body>
+{%  block content %}
+    <div class="container" align="center">
+        <p class="hox">welcome {{ user|title }}.Thank you for logging</p>
+        <a href="http://127.0.0.1:8000" class="hox">click here to go home page</a><br>
+    </div>
+{%  endblock %}
+</body>
+</html>

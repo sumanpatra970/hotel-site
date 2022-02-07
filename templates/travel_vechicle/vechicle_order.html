@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/basic.css' %}">
+</head>
+<body class="mox">
+<div class="container-fluid">
+    <div class="jumbotron mox">
+        <h1 class="display-4">WELCOME TO OUR WEBSITE</h1>
+        <p class="hox">The best and most beautiful things in the world cannot be seen or even touched - they must be felt with the heart. Helen Keller.</p>
+    </div>
+</div>
+<div class="container">
+    <form action="order">
+        <div><label for id="id3">DO YOU WANT VECHICLE</label>
+            <input class="form-control" type="text" id="id2" placeholder="yes/no">
+        </div><br>
+        <div>
+            <select class="custom-select form-control">select car
+                <option value="0">Select car:</option>
+                <option value="1">ALTO</option>
+                <option value="2">INDIGO</option>
+                <option value="3">WAGNOR</option>
+                <option value="4">INDICA</option>
+                <option value="5">SANTRO</option>
+                <option value="6">JAGUAR</option>
+            </select>
+        </div><br>
+        <div>
+            <label for="id2">Date</label>
+            <input id="id2" type="datetime-local" class="form-control">
+        </div><br>
+        <div>
+            <label for="id2">Phone no</label>
+            <input id="id2" type="text" class="form-control" placeholder="enter phoneno">
+        </div><br>
+        <div>
+            <input type="submit">
+        </div>
+    </form>
+</div>
+</body>
+</html>

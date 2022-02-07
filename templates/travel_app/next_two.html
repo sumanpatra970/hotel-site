@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% extends 'travel_app/header.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/basic.css' %}">
+</head>
+<body>
+{%  block content %}
+    <div class="container" align="center">
+        <p class="hox">Hey {{ user|title }},You have to signup first</p>
+        <a class=hox href="signup">Click here to go signup page</a><br>
+        <a class="hox" href="http://127.0.1:8000">Click here to go home page</a>
+    </div>
+{%  endblock %}
+</body>
+</html>

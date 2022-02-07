@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% extends 'travel_app/header.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/basic.css' %}">
+</head>
+<body>
+{% block content %}
+<div class="container-fluid gox">
+    <p class="kox">Offer is valid</p>
+    <p class="kox">To grab offer put couponcode "FIRST50"</p>
+</div>
+{% endblock %}
+</body>
+</html>
